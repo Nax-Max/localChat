@@ -1,0 +1,37 @@
+<!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
+<!--New Tab Link-->
+<!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
+<h3>
+    <a class="pull-left" href="index.html" target="_blank">
+        New Tab<i class="glyphicon glyphicon-new-window"></i>
+    </a>
+</h3>
+<!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
+<!--Log in-->
+<!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
+<div class="container" ng-hide="login">
+    <div class="slick-login">
+        <input type="text" class="nick" placeholder="Your nickname"/>
+        <input id="seven" class="enter" type="button" value="Enter" ng-click="show()"/>
+    </div>
+</div>
+<!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
+<!--Chat room-->
+<!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
+<div class="content" ng-show="login">
+    <center>
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-6">
+                    <div class="input-group">
+                        <input type="text" class="message-text" placeholder="Your message">
+                        <input type="button" class="send" value="Send now">
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-6">
+                    <div class="message-content"></div>
+                </div>
+            </div>
+        </div>
+    </center>
+</div>

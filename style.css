@@ -1,0 +1,215 @@
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+General style
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+html, body {
+    outline: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.4em;
+    font-weight: 400;
+    font-size: 16px;
+    overflow: hidden;
+    background-color: #323B55; /*#0079bf*/
+
+}
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Log In style
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+.slick-login {
+    width: 220px;
+    height: 155px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -110px;
+    margin-top: -75px;
+    animation: login 1s ease-in-out;
+}
+
+.slick-login input[type="text"] {
+    width: 100%;
+    height: 40px;
+    positon: relative;
+    margin-top: 7px;
+    font-size: 14px;
+    color: #444;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, .49);
+    padding-left: 20px;
+    background-clip: padding-box;
+    border-radius: 6px;
+    background-image: linear-gradient(bottom, #FFFFFF 0%, #F2F2F2 100%);
+    box-shadow: inset 0px 2px 0px #d9d9d9;
+    transition: all .1s ease-in-out;
+}
+
+.slick-login input[type="text"]:focus {
+    box-shadow: inset 0px 2px 0px #a7a7a7;
+}
+
+.slick-login label {
+    display: none;
+}
+
+.slick-login input[type="button"] {
+    width: 100%;
+    height: 50px;
+    margin-top: 7px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: 0px -1px 0px #5b6ddc;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, .49);
+
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border-radius: 6px;
+
+    background-color: #5466da;
+    background-image: -webkit-linear-gradient(bottom, #5466da 0%, #768ee4 100%);
+    background-image: -moz-linear-gradient(bottom, #5466da 0%, #768ee4 100%);
+    background-image: -o-linear-gradient(bottom, #5466da 0%, #768ee4 100%);
+    background-image: -ms-linear-gradient(bottom, #5466da 0%, #768ee4 100%);
+    background-image: linear-gradient(bottom, #5466da 0%, #768ee4 100%);
+
+    -webkit-box-shadow: inset 0px 1px 0px #9ab1ec;
+    box-shadow: inset 0px 1px 0px #9ab1ec;
+
+    cursor: pointer;
+
+    -webkit-transition: all .1s ease-in-out;
+    -moz-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+    -ms-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;
+}
+
+.slick-login input[type="button"]:hover {
+    background-color: #5f73e9;
+    background-image: -webkit-linear-gradient(bottom, #5f73e9 0%, #859bef 100%);
+    background-image: -moz-linear-gradient(bottom, #5f73e9 0%, #859bef 100%);
+    background-image: -o-linear-gradient(bottom, #5f73e9 0%, #859bef 100%);
+    background-image: -ms-linear-gradient(bottom, #5f73e9 0%, #859bef 100%);
+    background-image: linear-gradient(bottom, #5f73e9 0%, #859bef 100%);
+
+    -webkit-box-shadow: inset 0px 1px 0px #aab9f4;
+    box-shadow: inset 0px 1px 0px #aab9f4;
+    margin-top: 10px;
+}
+
+.slick-login input[type="button"]:active {
+    background-color: #7588e1;
+    background-image: -webkit-linear-gradient(bottom, #7588e1 0%, #7184df 100%);
+    background-image: -moz-linear-gradient(bottom, #7588e1 0%, #7184df 100%);
+    background-image: -o-linear-gradient(bottom, #7588e1 0%, #7184df 100%);
+    background-image: -ms-linear-gradient(bottom, #7588e1 0%, #7184df 100%);
+    background-image: linear-gradient(bottom, #7588e1 0%, #7184df 100%);
+
+    -webkit-box-shadow: inset 0px 1px 0px #93a9e9;
+    box-shadow: inset 0px 1px 0px #93a9e9;
+}
+
+@keyframes login {
+    0% {
+        filter: alpha(opacity=0);
+        opacity: 0;
+        margin-top: -50px;
+    }
+    100% {
+        filter: alpha(opacity=100);
+        opacity: 1;
+        margin-top: -75px;
+    }
+
+}
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Chat room style
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+.message-text{
+    width: 100%;
+    height: 40px;
+    positon: relative;
+    margin-top: 7px;
+    font-size: 14px;
+    color: #444;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, .49);
+    padding-left: 20px;
+    background-clip: padding-box;
+    border-radius: 6px;
+    background-image: linear-gradient(bottom, #FFFFFF 0%, #F2F2F2 100%);
+    box-shadow: inset 0px 2px 0px #d9d9d9;
+}
+
+.message-text:focus {
+    box-shadow: inset 0px 2px 0px #a7a7a7;
+}
+
+.send{
+    width: 100%;
+    height: 50px;
+    margin-top: 7px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: 0px -1px 0px #5b6ddc;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, .49);
+
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border-radius: 6px;
+
+    background-color: #5466da;
+    background-image: -webkit-linear-gradient(bottom, #5466da 0%, #768ee4 100%);
+    background-image: -moz-linear-gradient(bottom, #5466da 0%, #768ee4 100%);
+    background-image: -o-linear-gradient(bottom, #5466da 0%, #768ee4 100%);
+    background-image: -ms-linear-gradient(bottom, #5466da 0%, #768ee4 100%);
+    background-image: linear-gradient(bottom, #5466da 0%, #768ee4 100%);
+
+    -webkit-box-shadow: inset 0px 1px 0px #9ab1ec;
+    box-shadow: inset 0px 1px 0px #9ab1ec;
+
+    cursor: pointer;
+
+    -webkit-transition: all .1s ease-in-out;
+    -moz-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+    -ms-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;
+}
+
+.send:hover {
+    background-color: #5f73e9;
+    background-image: -webkit-linear-gradient(bottom, #5f73e9 0%, #859bef 100%);
+    background-image: -moz-linear-gradient(bottom, #5f73e9 0%, #859bef 100%);
+    background-image: -o-linear-gradient(bottom, #5f73e9 0%, #859bef 100%);
+    background-image: -ms-linear-gradient(bottom, #5f73e9 0%, #859bef 100%);
+    background-image: linear-gradient(bottom, #5f73e9 0%, #859bef 100%);
+
+    -webkit-box-shadow: inset 0px 1px 0px #aab9f4;
+    box-shadow: inset 0px 1px 0px #aab9f4;
+    margin-top: 10px;
+}
+
+.send:active {
+    background-color: #7588e1;
+    background-image: -webkit-linear-gradient(bottom, #7588e1 0%, #7184df 100%);
+    background-image: -moz-linear-gradient(bottom, #7588e1 0%, #7184df 100%);
+    background-image: -o-linear-gradient(bottom, #7588e1 0%, #7184df 100%);
+    background-image: -ms-linear-gradient(bottom, #7588e1 0%, #7184df 100%);
+    background-image: linear-gradient(bottom, #7588e1 0%, #7184df 100%);
+
+    -webkit-box-shadow: inset 0px 1px 0px #93a9e9;
+    box-shadow: inset 0px 1px 0px #93a9e9;
+}
+
+.message-content {
+    background-color: #FFFFFF;
+    border-radius: 12px;
+}
